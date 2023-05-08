@@ -1,3 +1,4 @@
+import subprocess
 from flask import Flask,render_template
 import csv
 
@@ -6,6 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 
 def index():
+    subprocess.call("./test.sh", shell=True)
     with open("../devices.csv",'r') as file:
         devices = file.readlines()
         device_list = []
@@ -16,9 +18,8 @@ def index():
 
     return render_template("index.html",devices=device_list)
 
+
 if __name__ == '__main__':
     app.run(debug=True)
 
 app.static_folder = 'static'
-
-
