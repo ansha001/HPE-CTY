@@ -14,3 +14,6 @@ For this project, we used virtual machines to setup the DHCP network. If you int
 3. Set the client machines to receive ip-addresses through DHCP.
 
 For more instructions on set-up and configurations, refer respective folders.
+### Flow Diagram
+
+![AUTO-LOCATE-SERVERS](https://github.com/ansha001/HPE-CTY/assets/79073575/cebe40cf-a3b3-44db-aa51-c62f1cd01235)
