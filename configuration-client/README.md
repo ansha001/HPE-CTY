@@ -1,5 +1,9 @@
 ## CLIENT CONFIGURATION
 
+On boot up of client machine, first install dhclient package, by running the following command:
+```
+sudo yum install dhclient
+```
 ### Steps to enable script file test.sh to run on boot:
 
 1. Copy the script file test.sh to a suitable location/ create the file at given location.
