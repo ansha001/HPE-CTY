@@ -15,5 +15,4 @@ For this project, we used virtual machines to setup the DHCP network. If you int
 
 For more instructions on set-up and configurations, refer respective folders.
 ### Flow Diagram
-
-![AUTO-LOCATE-SERVERS](https://github.com/ansha001/HPE-CTY/assets/79073575/cebe40cf-a3b3-44db-aa51-c62f1cd01235)
+![AUTO-LOCATE-SERVERS drawio](https://github.com/ansha001/HPE-CTY/assets/79073575/b518a786-bc79-4a29-86c3-e540dff82c21)
