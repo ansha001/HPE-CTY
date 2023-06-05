@@ -5,10 +5,9 @@ SuperUser = True if os.geteuid()==0 else False
 
 
 if SuperUser:
-	#	create a new back up file
-    	os.system('touch /etc/dhcp/dhclient.conf.bak')
+	os.system('touch /etc/dhcp/dhclient.conf.bak')
     	#   copy contents of dhclient.conf from /usr/share/doc/dhcp-client/dhclient.conf.example
-    	os.system('cp /usr/share/doc/dhcp-client/dhclient.conf.example /etc/dhcp/dhclient.conf.bak')
+	os.system('cp /usr/share/doc/dhcp-client/dhclient.conf.example /etc/dhcp/dhclient.conf.bak')
 	with open('/etc/dhcp/dhclient.conf.bak','r') as setupfile:
 		with open('/etc/dhcp/dhclient.conf','w') as configfile:
 			for line in setupfile:
@@ -25,4 +24,4 @@ if SuperUser:
 	time.sleep(3)
 
 #	os.system("systemctl restart NetworkManager")
-	os.system("dhclient -v")
+	os.system("dhclient -v")
